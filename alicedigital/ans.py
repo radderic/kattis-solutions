@@ -17,10 +17,10 @@ for c in range(cases):
     for i in range(n):
         val = int(vals[i])
         if(val == m):
-#            print('at pivot')
+            print('at pivot')
             if(rhs + lhs + m > top):
                 top = rhs + lhs + m
-#                print('new top: ' + str(top))
+                print('new top: ' + str(top))
             lhs = rhs
             rhs = 0
         elif(i == n-1):
@@ -29,9 +29,10 @@ for c in range(cases):
                 top = rhs + lhs + m
         else:
             rhs += val
-#            print('adding to rhs: ' + str(val))
-#            print('LHS total: ' + str(lhs))
-#            print('RHS total: ' + str(rhs))
+            print('adding to rhs: ' + str(val))
+            print('LHS total: ' + str(lhs))
+            print('RHS total: ' + str(rhs))
 
-    print(top)
+    print('Final: ' + str(top))
+#    print(top)
 
